@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Project</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/vendor/modernizr.js"></script>
+</head>
+<body>
+    <tab-control>
+        <pane title="First Tab">
+            <div>
+                <h1>Welcome</h1>
+                <h2>This is my TabControl element</h2>
+            </div>
+        </pane>
+        <pane title="Second Tab">
+            <div>
+                <h1>Here I can tell you that my name is Alex</h1>
+                <h3>Age: 24</h3>
+            </div>
+
+        </pane>
+        <pane title="Third Tab">
+            <h1>And here I try to use nested TabControl</h1>
+            <tab-control>
+                <pane title="One">
+                    <h1>And It works awesome!</h1>
+                </pane>
+                <pane title="Two">
+                    <h1>Here is some other very important information!</h1>
+                </pane>
+                <pane title="Three">
+                    <h1>Thank you for your attention :)</h1>
+                </pane>
+            </tab-control>
+        </pane>
+    </tab-control>
+</body>
+
+<script src="scripts/vendor.js"></script>
+<script src="scripts/plugins.js"></script>
+<script src="scripts/main.js"></script>
